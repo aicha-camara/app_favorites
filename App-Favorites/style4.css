@@ -1,0 +1,420 @@
+.video-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+/***********************
+	barre navigation
+	*********************/
+
+
+nav{
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 470px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #0b043d;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #80b918;
+}
+
+body{
+		background-image: linear-gradient(to right, #434343 -80%, black 100%);
+
+}
+header .slogan p{
+	margin: 490px;
+	margin-left: 150px;
+	margin-bottom: 50px;
+	font-size: 100px;
+	color: rgb(255, 253, 253);
+	text-align: center;
+    font-weight: 800;
+width: 80%;
+border-left: 5px solid #80b918;
+border-right: 5px solid #80b918;
+}
+
+
+
+/***********************
+	contenu 
+	*********************/
+
+
+#box {
+	background-image: url('images/geforce1.png');
+	background-repeat: none;
+	background-size: cover;
+    height: 560px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 20px solid #80b918;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+}
+
+#box  .left {
+    width: 40%;
+	
+}
+#box  .left h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+#box  .left h1 span {
+    color: #80b918;
+}
+#box  .left p {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+#box2{
+	border-bottom: 1px solid rgb(255, 255, 255);
+	border-top: 1px solid rgb(255, 255, 255);
+	margin: 10%;
+}
+#box2 .container {
+	width: 100%;
+	max-width: 1000px; 
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  #box2 h1 {
+	color: #ffffff;
+  }
+  
+  #box2  .video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+  }
+  
+#box2 .video-container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  #box3 {
+
+    height: 560px;
+    margin-left: 10px;
+    margin-right: 10px;
+	margin-bottom: 30px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 5px;
+	background-color: #ffffff;
+}
+
+#box3  .left {
+    width: 40%;
+	
+}
+#box3  .left h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#box3 .left h1 span {
+    color: #80b918;
+}
+#box3  .left p {
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 20px;
+}
+#box3 .right{
+    width:60%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    
+}
+#box3 .right img{
+    width: 70%;
+}
+
+/***********************
+	bouton
+	*********************/
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+  }
+  
+  .cta {
+	  display: flex;
+	  padding: 10px 45px;
+	  text-decoration: none;
+	  font-family: 'Poppins', sans-serif;
+	  font-size: 25px;
+	  color: rgb(255, 255, 255);
+	  background: #80b918;
+	  transition: 1s;
+	  box-shadow: 6px 6px 0 black;
+	  transform: skewX(-15deg);
+	
+  }
+  
+  .cta:focus {
+	 outline: none; 
+  }
+  
+  .cta:hover {
+	  transition: 0.5s;
+	  box-shadow: 10px 10px 0 rgb(45, 44, 44);
+  }
+  
+  .cta span:nth-child(2) {
+	  transition: 0.5s;
+	  margin-right: 0px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+	  transition: 0.5s;
+	  margin-right: 45px;
+  }
+  
+	span {
+	  transform: skewX(15deg) 
+	}
+  
+	span:nth-child(2) {
+	  width: 20px;
+	  margin-left: 30px;
+	  position: relative;
+	  top: 12%;
+	}
+	
+ 
+  
+  path.one {
+	  transition: 0.4s;
+	  transform: translateX(-60%);
+  }
+  
+  path.two {
+	  transition: 0.5s;
+	  transform: translateX(-30%);
+  }
+  
+  .cta:hover path.three {
+	  animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover path.one {
+	  transform: translateX(0%);
+	  animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover path.two {
+	  transform: translateX(0%);
+	  animation: color_anim 1s infinite 0.4s;
+  }
+  
+ 
+  
+  @keyframes color_anim {
+	  0% {
+		  fill: white;
+	  }
+	  50% {
+		  fill: #FBC638;
+	  }
+	  100% {
+		  fill: white;
+	  }
+  }
+ 
+/***********************
+	footer
+	*********************/
+
+  
+.footer{
+	background:#000;
+	padding:30px 0px;
+	font-family: 'Play', sans-serif;
+	text-align:center;
+
+	}
+	
+	.footer .row{
+	width:100%;
+	margin:1% 0%;
+	padding:0.6% 0%;
+	color:gray;
+	font-size:0.8em;
+	}
+	
+	.footer .row a{
+	text-decoration:none;
+	color:gray;
+	transition:0.5s;
+	}
+	
+	.footer .row a:hover{
+	color:#fff;
+	}
+	.footer-col h1{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+      }
+	
+	
+	
+	.footer .row a i{
+	font-size:2em;
+	margin:0% 1%;
+	}
+	
+	@media (max-width:720px){
+	.footer{
+	text-align:left;
+	padding:5%;
+	}
+	
+	.footer .row a i{
+	margin:0% 3%;
+	}
+	}
+
+/***********************
+	responsive
+	*********************/
+
+    @media only screen and (max-width: 720px) {
+        .video-background video {
+          height: 100%; 
+        }
+      
+        nav {
+          width: 100%; 
+        }
+      
+        nav a {
+          font-size: 12px; 
+        }
+      
+        nav .animation {
+          border-radius: 0; 
+        }
+      
+        header .slogan p {
+          margin: 50px 0; 
+        }
+      
+        #box {
+          height: auto; 
+        }
+      
+        #box .left h1 {
+          font-size: 30px; 
+        }
+      
+        #box .left p,
+        #box3 .left p {
+          font-size: 16px; 
+        }
+      
+        #box .left a {
+          font-size: 16px;
+        }
+      
+        #box3 .right img {
+          width: 100%;
+        }
+      }
+      
+    
